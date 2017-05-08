@@ -1,0 +1,26 @@
+- description: ''
+  executionEnabled: true
+  group: rundeck.example.com
+  id: 0d1a7920-77dc-4616-befc-3597f342076d
+  loglevel: INFO
+  name: mk_resources.sh
+  nodeFilterEditable: false
+  schedule:
+    month: '*'
+    time:
+      hour: '19'
+      minute: '00'
+      seconds: '0'
+    weekday:
+      day: '*'
+    year: '*'
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - exec: /var/lib/rundeck/bin/mk_resources.sh
+    keepgoing: false
+    pluginConfig:
+      WorkflowStrategy:
+        node-first: null
+    strategy: node-first
+  uuid: 0d1a7920-77dc-4616-befc-3597f342076d
